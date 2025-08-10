@@ -1,0 +1,301 @@
+{
+  "patients": [
+    {
+      "identifier": [
+        {
+          "system": "http://hospital.example.org/MRNs",
+          "value": "MRN-1001"
+        }
+      ],
+      "name": [
+        {
+          "given": [
+            "John"
+          ],
+          "family": "Doe"
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1958-02-14",
+      "vitals": [
+        {
+          "code": {
+            "display": "Blood pressure"
+          },
+          "value": "128/78",
+          "unit": "mmHg",
+          "effectiveDateTime": "2025-07-01T10:05:00Z"
+        },
+        {
+          "code": {
+            "display": "Heart rate"
+          },
+          "value": 72,
+          "unit": "bpm",
+          "effectiveDateTime": "2025-07-01T10:05:00Z"
+        }
+      ],
+      "medications": [
+        {
+          "drug": "Lisinopril 10 mg",
+          "dosage": "1 tab daily",
+          "status": "active"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "Rash",
+          "severity": "mild"
+        }
+      ],
+      "labs": [
+        {
+          "code": {
+            "display": "HbA1c"
+          },
+          "value": 6.8,
+          "unit": "%",
+          "effectiveDateTime": "2025-06-15T09:00:00Z"
+        }
+      ],
+      "imaging": [
+        {
+          "modality": "XR Chest",
+          "bodySite": "Chest",
+          "effectiveDateTime": "2025-06-25T12:00:00Z",
+          "impression": "No acute process"
+        }
+      ],
+      "clinic_visits": [
+        {
+          "date": "2025-06-20",
+          "type": "Follow-up",
+          "cpt": "99214",
+          "note": "BP well controlled."
+        }
+      ],
+      "hospitalizations": [
+        {
+          "period": {
+            "start": "2025-03-10",
+            "end": "2025-03-12"
+          },
+          "drg": "313",
+          "disposition": "Home"
+        }
+      ],
+      "insurance": {
+        "provider": "Medicare A/B",
+        "plan_type": "Original Medicare",
+        "policy_number": "MED-AB-1234",
+        "reimbursement_model": "Fee-for-Service",
+        "coverage": {
+          "deductible": 240,
+          "copay": 0,
+          "coinsurance": 0.2,
+          "out_of_pocket_max": 5000
+        },
+        "claims_history": [
+          {
+            "service": "Inpatient stay (DRG 313)",
+            "date": "2025-03-12",
+            "cost": 9500,
+            "approved_amount": 7800,
+            "status": "Paid"
+          },
+          {
+            "service": "Office visit (99214)",
+            "date": "2025-06-20",
+            "cost": 200,
+            "approved_amount": 160,
+            "status": "Paid"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": [
+        {
+          "system": "http://hospital.example.org/MRNs",
+          "value": "MRN-2002"
+        }
+      ],
+      "name": [
+        {
+          "given": [
+            "Maria"
+          ],
+          "family": "Garcia"
+        }
+      ],
+      "gender": "female",
+      "birthDate": "1986-09-12",
+      "vitals": [
+        {
+          "code": {
+            "display": "Blood pressure"
+          },
+          "value": "135/85",
+          "unit": "mmHg",
+          "effectiveDateTime": "2025-07-02T14:30:00Z"
+        }
+      ],
+      "medications": [
+        {
+          "drug": "Atorvastatin 20 mg",
+          "dosage": "1 tab nightly",
+          "status": "active"
+        }
+      ],
+      "allergies": [],
+      "labs": [
+        {
+          "code": {
+            "display": "Lipid panel LDL"
+          },
+          "value": 110,
+          "unit": "mg/dL",
+          "effectiveDateTime": "2025-06-18T10:00:00Z"
+        }
+      ],
+      "imaging": [
+        {
+          "modality": "MRI Knee",
+          "bodySite": "Right knee",
+          "effectiveDateTime": "2025-07-05T08:00:00Z",
+          "impression": "Meniscal tear"
+        }
+      ],
+      "clinic_visits": [
+        {
+          "date": "2025-07-06",
+          "type": "Specialist",
+          "cpt": "99243",
+          "note": "Referred to ortho."
+        }
+      ],
+      "hospitalizations": [],
+      "insurance": {
+        "provider": "Acme Health Plan",
+        "plan_type": "PPO",
+        "policy_number": "PPO-7890",
+        "reimbursement_model": "Value-Based",
+        "coverage": {
+          "deductible": 1000,
+          "copay": 25,
+          "coinsurance": 0.2,
+          "out_of_pocket_max": 4000
+        },
+        "claims_history": [
+          {
+            "service": "MRI Knee",
+            "date": "2025-07-05",
+            "cost": 1200,
+            "approved_amount": 1000,
+            "status": "Pending"
+          },
+          {
+            "service": "Rx (statin)",
+            "date": "2025-06-20",
+            "cost": 40,
+            "approved_amount": 35,
+            "status": "Paid"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": [
+        {
+          "system": "http://hospital.example.org/MRNs",
+          "value": "MRN-3003"
+        }
+      ],
+      "name": [
+        {
+          "given": [
+            "David"
+          ],
+          "family": "Lee"
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1991-11-03",
+      "vitals": [
+        {
+          "code": {
+            "display": "Heart rate"
+          },
+          "value": 64,
+          "unit": "bpm",
+          "effectiveDateTime": "2025-07-03T11:00:00Z"
+        }
+      ],
+      "medications": [],
+      "allergies": [
+        {
+          "substance": "Peanuts",
+          "reaction": "Hives",
+          "severity": "moderate"
+        }
+      ],
+      "labs": [],
+      "imaging": [
+        {
+          "modality": "CT Abdomen",
+          "bodySite": "Abdomen",
+          "effectiveDateTime": "2025-04-02T04:00:00Z",
+          "impression": "Appendicitis resolved post-op"
+        }
+      ],
+      "clinic_visits": [
+        {
+          "date": "2025-04-15",
+          "type": "Post-op",
+          "cpt": "99024",
+          "note": "Healing well."
+        }
+      ],
+      "hospitalizations": [
+        {
+          "period": {
+            "start": "2025-04-01",
+            "end": "2025-04-03"
+          },
+          "drg": "343",
+          "disposition": "Home"
+        }
+      ],
+      "insurance": {
+        "provider": "EPO Choice",
+        "plan_type": "EPO",
+        "policy_number": "EPO-5566",
+        "reimbursement_model": "Fee-for-Service",
+        "coverage": {
+          "deductible": 2000,
+          "copay": 30,
+          "coinsurance": 0.1,
+          "out_of_pocket_max": 6000
+        },
+        "claims_history": [
+          {
+            "service": "Appendectomy",
+            "date": "2025-04-01",
+            "cost": 18000,
+            "approved_amount": 16000,
+            "status": "Paid"
+          },
+          {
+            "service": "Dermatology (OON)",
+            "date": "2025-05-20",
+            "cost": 250,
+            "approved_amount": 0,
+            "status": "Denied",
+            "reason": "Out-of-network"
+          }
+        ]
+      }
+    }
+  ]
+}
